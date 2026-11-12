@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="wea.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            🌤️ Weather Dashboard
+        </div>
+
+        <nav>
+
+            <a href="wea.html" class="active">
+                Home
+            </a>
+
+            <a href="search.html">
+                Search
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    WEATHER DASHBOARD
+                </p>
+
+                <h1>
+                    Check Weather<br>
+                    Anywhere
+                </h1>
+
+                <p class="hero-text">
+                    Search for any city and discover
+                    its current weather and forecast.
+                </p>
+
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="homeCity"
+                        placeholder="Enter city name..."
+                    >
+
+                    <button id="homeSearchBtn">
+                        🔍 Search
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="flower">
+                🌸
+            </div>
+
+        </section>
+
+
+        <!-- RECENT SEARCHES -->
+
+        <section class="recent-section">
+
+            <h2>
+                Recent Searches
+            </h2>
+
+            <div id="recentCities">
+
+                <p class="no-recent">
+                    No recent searches yet.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <span>
+            🌤️ Weather Dashboard
+        </span>
+
+        <span>
+            © 2026 Weather Dashboard
+        </span>
+
+    </footer>
+
+
+    <script src="wea.js"></script>
+
+</body>
+
+</html>

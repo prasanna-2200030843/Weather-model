@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Search Weather</title>
+
+    <link rel="stylesheet" href="wea.css">
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            🌤️ Weather Dashboard
+        </div>
+
+
+        <nav>
+
+            <a href="wea.html">
+                Home
+            </a>
+
+            <a href="search.html" class="active">
+                Search
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+
+        <!-- SEARCH SECTION -->
+
+        <section class="search-section">
+
+            <p class="small-title">
+                WEATHER SEARCH
+            </p>
+
+            <h1>
+                Search Weather
+            </h1>
+
+            <p class="search-description">
+                Search any city to view its current weather.
+            </p>
+
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name..."
+                >
+
+                <button id="searchBtn">
+                    🔍 Search
+                </button>
+
+            </div>
+
+
+            <!-- ERROR -->
+
+            <p id="error"></p>
+
+
+            <!-- CITY RESULTS -->
+
+            <div
+                id="cityResults"
+                class="city-results"
+            ></div>
+
+        </section>
+
+
+
+        <!-- WEATHER DETAILS -->
+
+        <section
+            id="weatherDetails"
+            class="weather-details hidden"
+        >
+
+
+            <!-- LOCATION -->
+
+            <div class="location">
+
+                <p class="small-title">
+                    CURRENT WEATHER
+                </p>
+
+                <h1 id="cityName">
+                    --
+                </h1>
+
+                <p id="date">
+                    --
+                </p>
+
+            </div>
+
+
+
+            <!-- CURRENT WEATHER -->
+
+            <div class="current-weather">
+
+
+                <!-- TEMPERATURE -->
+
+                <div class="temperature">
+
+                    <div
+                        id="weatherIcon"
+                        class="weather-icon"
+                    >
+                        ☀️
+                    </div>
+
+
+                    <div>
+
+                        <h1 id="temperature">
+                            --
+                        </h1>
+
+                        <h2 id="condition">
+                            --
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WEATHER INFORMATION -->
+
+                <div class="weather-info">
+
+
+                    <!-- HUMIDITY -->
+
+                    <div class="info-card">
+
+                        <span>
+                            💧
+                        </span>
+
+                        <p>
+                            Humidity
+                        </p>
+
+                        <h2 id="humidity">
+                            --
+                        </h2>
+
+                    </div>
+
+
+
+                    <!-- WIND -->
+
+                    <div class="info-card">
+
+                        <span>
+                            💨
+                        </span>
+
+                        <p>
+                            Wind Speed
+                        </p>
+
+                        <h2 id="wind">
+                            --
+                        </h2>
+
+                    </div>
+
+
+
+                    <!-- FEELS LIKE -->
+
+                    <div class="info-card">
+
+                        <span>
+                            🌡️
+                        </span>
+
+                        <p>
+                            Feels Like
+                        </p>
+
+                        <h2 id="feels">
+                            --
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FORECAST -->
+
+            <div class="forecast">
+
+                <h2>
+                    5-Day Forecast
+                </h2>
+
+
+                <div
+                    id="forecastContainer"
+                    class="forecast-container"
+                >
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <span>
+            🌤️ Weather Dashboard
+        </span>
+
+        <span>
+            © 2026 Weather Dashboard
+        </span>
+
+    </footer>
+
+
+    <script src="search.js"></script>
+
+</body>
+
+</html>
